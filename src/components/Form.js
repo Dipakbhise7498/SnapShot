@@ -7,6 +7,7 @@ const Form = ({ handleSubmit, history }) => {
     setSearchEntry(e.target.value);
   };
   return (
+    <>
     <form
       className="search-form"
       onSubmit={e => handleSubmit(e, history, searchEntry)}
@@ -32,6 +33,7 @@ const Form = ({ handleSubmit, history }) => {
         </svg>
       </button>
     </form>
+    </>
   );
 };
 
